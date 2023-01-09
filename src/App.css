@@ -51,6 +51,8 @@ button{
   margin-top: -3px;
   box-sizing: border-box;
   margin-top: -2%;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   z-index: -1;
 }
 .seleccionado{
