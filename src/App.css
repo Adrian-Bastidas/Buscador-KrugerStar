@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: #202124;
+}
+button{
+  background-color: #303134;
+  border: none;
+  color: white;
+  padding: 5%;
+  border-radius: 0.5rem;
+}
+.contenedor-botones{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.botones{
+  padding: 0.5%;
+  color: white;
+}
+.barra-busqueda{
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+.barra{
+  background-color: #303134;
+  color: white;
+  border-radius: 1rem;
+  width: 100%;
+  height: 200%;
+  text-align: center;
+  padding-top: 1%;
+  font-size: 150%;
+  border-color: #5f6368;
+  outline: none;
+  margin-top: 5%;
+}
+.seleccion{
+  color: white;
+}
+.contenedor-resultados{
+  position: absolute;
+  width: 400px;
+  background: #303134;
+  border: solid 1px #222;
+  border-top: solid 1px transparent;
+  margin-top: -3px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+.seleccionado{
+  color: #c58ae6;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.bloque{
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
