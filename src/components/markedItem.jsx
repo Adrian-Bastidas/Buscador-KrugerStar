@@ -1,27 +1,5 @@
 import { useMemo } from "react";
-import styled from "styled-components";
 
-const StyledMarker = styled.span`
-  background-color: yellow;
-  font-weight: bolder;
-
-`;
-
-const StyledItem = styled.a`
-  color: black;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-
-  &:hover {
-    background-color: #4c91ba;
-    color: white;
-  }
-
-  &:hover span {
-    color: black;
-  }
-`;
 
 export default function MarkedItem({ item, onClick, query }) {
   const { left, center, right } = useMemo(
@@ -47,9 +25,9 @@ export default function MarkedItem({ item, onClick, query }) {
   }
 
   return (
-    <div href="#" onClick={handleClick}>
+    <div className="bloque" href="#" onClick={handleClick}>
       {left}
-      <div>{center}</div>
+      <label className="seleccionado">{center}</label>
       {right}
     </div>
   );

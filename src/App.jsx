@@ -3,26 +3,6 @@ import "./App.css";
 import { useState } from "react";
 import SearchBar from "./components/searchbar";
 
-import styled from "styled-components";
-
-const StyledButton = styled.button`
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  border: solid 2px #ccc;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #efefef;
-  }
-
-  .activated{
-    background-color: #00366
-    color: white;
-    border: solid 2px #26aeff;
-  }
-`;
 
 const emails = [
   {
@@ -131,19 +111,30 @@ function App() {
 
   return (
     <div className="App">
+      <div className="contenedor-botones">
+      <div className="botones">
       <button name="all" onClick={handleClick}>
-        Search in All
+        Buscar en todos
       </button>
+      </div>
+      <div className="botones">
       <button name="emails" onClick={handleClick}>
-        Search in Emails
+        Buscar en Emails
       </button>
+      </div>
+      <div className="botones">
       <button name="calendar" onClick={handleClick}>
-        Search in Calendar
+        Buscar en Calendario
       </button>
+      </div>
+      <div className="botones">
       <button name="people" onClick={handleClick}>
-        Search in People
+        Buscar en Personas
       </button>
-      {selection ? <div>You selected: {selection.title}</div> : ""}
+      </div>
+      </div>
+      <img src="./images/logo.png" width="250"/>
+      {selection ? <div className="seleccion">Seleccionaste: {selection.title}</div> : ""}
       <SearchBar items={data} onItemSelected={handleOnItemSelected} />
     </div>
   );

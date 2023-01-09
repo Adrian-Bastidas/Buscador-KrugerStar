@@ -35,9 +35,6 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "styled-components": "^5.3.5"
-  },
   "resolutions": {
     "styled-components": "^5"
   }
