@@ -50,7 +50,8 @@ button{
   border-top: solid 1px transparent;
   margin-top: -3px;
   box-sizing: border-box;
-  border-radius: 1rem;
+  margin-top: -2%;
+  z-index: -1;
 }
 .seleccionado{
   color: #c58ae6;
