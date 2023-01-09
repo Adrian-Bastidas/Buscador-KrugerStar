@@ -1,9 +1,9 @@
 # To Do List
-<img src='public\Images\kruger.png' width='100'>
+<img src='public\images\kruger.png' width='100'>
 
 In this repository you can find the code of a page containing a browser project for Kuger Star.
 
-<img src='public\Images\buscador.png'>
+<img src='public\images\buscador.png'>
 
 ## Built With
 
